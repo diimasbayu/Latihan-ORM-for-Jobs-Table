@@ -17,6 +17,8 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -131,5 +133,6 @@ public class Jobs implements Serializable {
     public String toString() {
         return "entities.Jobs[ jobId=" + jobId + " ]";
     }
+   
     
 }

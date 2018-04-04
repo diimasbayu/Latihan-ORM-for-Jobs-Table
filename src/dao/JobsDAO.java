@@ -7,6 +7,8 @@ package dao;
 
 import entities.Jobs;
 import java.util.List;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -81,5 +83,6 @@ public class JobsDAO {
     public List<Object> search(String category, String search) {
         return fdao.getAll("FROM Jobs WHERE " + category + " LIKE '%" + search + "%'");
     }
-
+    
+     
 }
